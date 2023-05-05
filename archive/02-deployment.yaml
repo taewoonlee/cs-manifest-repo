@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: game2048
-          image: "870393486939.dkr.ecr.ap-northeast-2.amazonaws.com/factc-app:latest"
+          image: "870393486939.dkr.ecr.ap-northeast-2.amazonaws.com/fastc-app:latest"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
