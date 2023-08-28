@@ -5,12 +5,12 @@ metadata:
   name: game2048
   annotations:
     kubernetes.io/ingress.class: alb
-    alb.ingress.kubernetes.io/load-balancer-name: fastc-alb
+    alb.ingress.kubernetes.io/load-balancer-name: bluerain-alb
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
     alb.ingress.kubernetes.io/healthcheck-path: /
-    alb.ingress.kubernetes.io/subnets: subnet-0d2cda75764e9fce7, subnet-04e51e7510871c7f7
+    alb.ingress.kubernetes.io/subnets: subnet-0c30ac8fd0d2bf80d, subnet-028555d3a7b985122
 spec:
   rules:
     - http:

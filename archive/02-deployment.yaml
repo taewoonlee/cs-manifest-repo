@@ -21,16 +21,16 @@ spec:
     spec:
       containers:
         - name: game2048
-          image: "870393486939.dkr.ecr.ap-northeast-2.amazonaws.com/fastc-app:latest"
+          image: "432089655801.dkr.ecr.ap-northeast-2.amazonaws.com/bluerain-app:latest"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
               containerPort: 8080
               protocol: TCP
-      nodeSelector:
-        nodeType: service-2023
-      tolerations:
-        - key: service
-          operator: "Equal"
-          value: "true"
-          effect: "NoSchedule"
+      #nodeSelector:
+      #  nodeType: service-2023
+      #tolerations:
+      #  - key: service
+      #    operator: "Equal"
+      #    value: "true"
+      #    effect: "NoSchedule"
